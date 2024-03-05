@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pEight</string>
+    <string name="location">Location</string>
+    <string name="search">Search</string>
+    <string name="setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">todo</string>
+    <string name="theme_light_dark">Dark Mode</string>
+    <string name="notification">Notification</string>
+    <string name="destination_msg">Destination not found ...</string>
+</resources>

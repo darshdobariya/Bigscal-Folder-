@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="30sp"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/login"
+            android:textColor="@color/icon_tint"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:hint="@string/mobile_number"
+            app:boxCornerRadiusBottomEnd="25sp"
+            app:boxCornerRadiusBottomStart="25sp"
+            app:boxCornerRadiusTopEnd="25sp"
+            app:boxCornerRadiusTopStart="25sp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@drawable/edt_select_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:hint="@string/otp"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/send"
+            app:boxCornerRadiusBottomEnd="25sp"
+            app:boxCornerRadiusBottomStart="25sp"
+            app:boxCornerRadiusTopEnd="25sp"
+            app:boxCornerRadiusTopStart="25sp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@drawable/edt_select_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/text_normal"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/login"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

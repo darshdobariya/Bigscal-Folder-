@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+        // Google Component
+        maven { url "https://jitpack.io" }
+
+        // JFrog Library
+        maven { url 'https://dl.bintray.com/wangyuwei/maven' }
+    }
+}
+rootProject.name = "GFGBasics"
+include ':app'

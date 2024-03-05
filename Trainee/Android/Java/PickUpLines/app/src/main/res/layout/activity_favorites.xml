@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FavoritesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:padding="15sp"
+            android:src="@drawable/arrow_back"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="22sp"
+            android:text="@string/favorites"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    Application theme-->
+    <color name="dark_red">#BA1A1A</color>
+    <color name="purple_one">#8A20D5</color>
+    <color name="background">#F6EDFF</color>
+    <color name="purple_text">#2E004E</color>
+    <color name="purple_background">#E0B6FF</color>
+    <color name="gray_background">#D0BCFF</color>
+
+    <color name="parent_purple">#E2D3FA</color>
+    <color name="icon_color">#1C1B1F</color>
+</resources>

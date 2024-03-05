@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragmentsingle.UserDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:paddingBottom="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="50sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/back"
+                    android:src="@drawable/arrow_back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/user_profile"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:src="@drawable/housekeeper"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/tvLastMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintStart_toEndOf="@+id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnMore"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <ImageButton
+                android:id="@+id/btnMore"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/more"
+                android:src="@drawable/more"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPrevious"
+            app:cardMaxElevation="0sp"
+            android:layout_width="95sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="50sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <TextView
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="17sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvNext"
+            android:layout_width="95sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/orange"
+            app:cardCornerRadius="50sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            app:cardMaxElevation="0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

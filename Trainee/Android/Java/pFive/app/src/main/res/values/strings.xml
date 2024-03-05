@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pFive</string>
+    <string name="camera">Camera</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="todo">TODO</string>
+    <string name="full_screen">Full Screen</string>
+</resources>

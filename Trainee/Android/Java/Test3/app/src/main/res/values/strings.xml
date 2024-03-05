@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Messenger</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="number">Number</string>
+    <string name="friend">Friend</string>
+    <string name="msg_body">Message Body</string>
+    <string name="msg_time">Message Time</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="otp">otp</string>
+    <string name="timer">timer</string>
+
+    <string name="db_user">Users</string>
+    <string name="db_uid">UID</string>
+    <string name="db_mobile">Mobile</string>
+    <string name="img_profile">Img Profile</string>
+    <string name="next">Next</string>
+    <string name="enter_text_here">Enter text here</string>
+    <string name="send">send</string>
+    <string name="back">back</string>
+    <string name="add">add</string>
+    <string name="db_name">Name</string>
+    <string name="db_profile_image">ProfileImage</string>
+    <string name="enter_name">Enter your name here</string>
+
+</resources>

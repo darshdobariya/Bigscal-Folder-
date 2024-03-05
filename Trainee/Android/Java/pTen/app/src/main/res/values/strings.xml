@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pTen</string>
+    <string name="enter_mail">Enter Mail</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="enter_body">Enter Body</string>
+    <string name="send">Send</string>
+</resources>

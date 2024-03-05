@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pNineteen</string>
+    <string name="detail">Detail</string>
+    <string name="drinks">Drinks</string>
+    <string name="category">Category</string>
+    <string name="alcoholic">Alcoholic</string>
+    <string name="instruction">Instruction</string>
+    <string name="ingredients">Ingredients</string>
+</resources>

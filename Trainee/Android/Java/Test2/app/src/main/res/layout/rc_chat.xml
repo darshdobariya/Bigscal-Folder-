@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/consPosition"
+    android:layout_width="match_parent"
+    android:layout_height="74sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:contentDescription="@string/user_profile"
+        android:layout_width="52sp"
+        android:layout_height="52sp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/housekeeper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="21sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLatMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="21sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/hint_gray_normal"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="21sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/hint_gray_normal"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgNext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:contentDescription="@string/next"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/right_arrow"
+        app:tint="@color/hint_gray_bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="22sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/light_green"
+        app:cardCornerRadius="50sp"
+        app:cardElevation="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgNext"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

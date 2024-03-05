@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GFGBasics" parent="Theme.Material3.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color9</item>
+        <item name="colorPrimaryDark">@color/color101</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--this changes the filled colour of the MDC Filled EditText-->
+        <!--this also changes the color of the hint font and helper text too-->
+        <item name="colorOnSurface">@color/color32</item>
+        
+        <item name="materialButtonOutlinedStyle">@style/btnRound</item>
+
+    </style>
+
+    <style name="Theme.GFGBasics" parent="Base.Theme.GFGBasics" />
+
+    <style name="Theme.GFGBasics.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GFGBasics.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GFGBasics.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Cut" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="btnRound" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearance">@style/btnRound</item>
+        <item name="android:textAppearance">@style/myCustomTextForMaterialButtons</item>
+    </style>
+
+    <style name="myCustomTextForMaterialButtons">
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

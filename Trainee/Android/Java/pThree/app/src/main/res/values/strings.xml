@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">pThree</string>
+    <string name="let_s_take_survey">Let\'s Take Survey</string>
+    <string name="pre">Previous</string>
+    <string name="next">Next</string>
+    <string name="thank_you_n_for_feedback">Thank You \n For Feedback</string>
+    <string name="todo">todo</string>
+    <string name="ok">Ok</string>
+</resources>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bars.BarActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:thumb="@drawable/home"
+            android:tickMark="@color/color45"
+            android:tickMarkTint="@color/color24"
+            android:layout_width="match_parent"
+            android:progress="20"
+            android:backgroundTintMode="src_over"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.polyak.iconswitch.IconSwitch
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isw_icon_left="@drawable/home"
+        app:isw_icon_right="@drawable/setting"
+        app:isw_background_color="@color/color76"
+        app:isw_thumb_color_left="@color/color24"
+        app:isw_thumb_color_right="@color/color35"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnCustomSnack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Custom SnackBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GeeksForGeeks"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.rtugeek.android.colorseekbar.ColorSeekBar
+            android:id="@+id/color_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:colorSeeds="@array/custom_colors"
+            app:showAlphaBar="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:textSize="18sp"
+        android:text="Set difficulty for problem:-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <com.jaygoo.widget.RangeSeekBar
+        android:id="@+id/range_seekbar_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rsb_gravity="bottom"
+        app:rsb_indicator_background_color="@color/color76"
+        app:rsb_indicator_height="30dp"
+        app:rsb_indicator_width="50dp"
+        app:rsb_mode="single"
+        app:rsb_progress_color="@color/color7"
+        app:rsb_step_auto_bonding="true"
+        app:rsb_step_color="@color/color45"
+        app:rsb_step_height="10dp"
+        app:rsb_step_width="5dp"
+        app:rsb_steps="3"
+        app:rsb_thumb_drawable="@drawable/home"
+        app:rsb_tick_mark_layout_gravity="bottom"
+        app:rsb_tick_mark_mode="other"
+        app:rsb_tick_mark_text_array="@array/levelArray"
+        app:rsb_tick_mark_text_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+<!--    Refer artical https://www.geeksforgeeks.org/expandablebottombar-in-android/ for more-->
+    <github.com.st235.lib_expandablebottombar.ExpandableBottomBar
+        android:id="@+id/expandable_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:exb_backgroundColor="#2e2e2e"
+        app:exb_backgroundCornerRadius="25dp"
+        app:exb_itemInactiveColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--Progress Bar created-->
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/your_state_progress_bar_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_checkStateCompleted="true"
+            app:spb_currentStateDescriptionColor="#0F9D58"
+            app:spb_currentStateNumber="one"
+            app:spb_maxStateNumber="four"
+            app:spb_stateBackgroundColor="#BDBDBD"
+            app:spb_stateDescriptionColor="#808080"
+            app:spb_stateForegroundColor="#0F9D58"
+            app:spb_stateNumberBackgroundColor="#808080"
+            app:spb_stateNumberForegroundColor="#eeeeee" />
+
+        <!--Button to go on next step-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="NEXT" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

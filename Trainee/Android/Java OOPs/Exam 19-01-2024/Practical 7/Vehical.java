@@ -1,0 +1,3 @@
+interface Vehical{
+    void speedUp();
+} 

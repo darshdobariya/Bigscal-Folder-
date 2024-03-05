@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advanceview.WheelViews">
+
+    <!--    <me.sujanpoudel.wheelview.WheelView-->
+    <!--        android:id="@+id/wheel_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:wheelAnchorAngle="270"-->
+    <!--        app:wheelAnimationDuration="800"-->
+    <!--        app:wheelArcBackgroundColor="#F7F8FB"-->
+    <!--        app:wheelCenterIcon="@drawable/home"-->
+    <!--        app:wheelCenterIconPadding="16dp"-->
+    <!--        app:wheelCenterIconTint="@android:color/white"-->
+    <!--        app:wheelDividerStrokeWidth="16dp"-->
+    <!--        app:wheelMode="ANIMATE_TO_ANCHOR"-->
+    <!--        app:wheelSelectedArcBackgroundColor="@color/color44"-->
+    <!--        app:wheelSelectedTextColor="#FFF"-->
+    <!--        app:wheelStartAngle="315"-->
+    <!--        app:wheelTextColor="#000000"-->
+    <!--        app:wheelTextSize="16sp" />-->
+
+    <!--    <andreasagap.loadingbutton.ButtonLoading-->
+    <!--        android:id="@+id/loadingbutton"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:padding="6dp"-->
+    <!--        app:BL_backgroundColor="#9c9b9999"-->
+    <!--        app:BL_circleColor="#219806"-->
+    <!--        app:BL_circleColorSecond="#126300"-->
+    <!--        app:BL_enable="true"-->
+    <!--        app:BL_stateShow="normal"-->
+    <!--        app:BL_text="Buy Course"-->
+    <!--        app:BL_textColor="#FFF"-->
+    <!--        app:BL_textSize="16sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color44"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv2"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color44"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

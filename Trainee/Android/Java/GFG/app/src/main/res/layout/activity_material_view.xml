@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".materialdesign.MaterialViewActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="label"
+        app:counterEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterMaxLength="10"
+        app:helperTextEnabled="true"
+        app:helperText="Its helper"
+        app:endIconMode="password_toggle"
+        app:shapeAppearance="@style/Cut"
+        app:startIconDrawable="@drawable/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        app:layout_constraintBottom_toTopOf="@+id/ivTwo"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ivTwo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOne"
+        android:visibility="gone"/>
+
+    <Button
+        style="@style/btnRound"
+        android:text="Hello World"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button1"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 3" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+<!--    https://www.geeksforgeeks.org/material-design-buttons-in-android-with-example/-->
+<!--    <com.google.android.material.button.MaterialButtonToggleGroup-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/bold_button"-->
+<!--        style="@style/Widget.App.Button.OutlinedButton.IconOnly"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:icon="@drawable/ic_format_bold_black_24dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/italic_button"-->
+<!--        style="@style/Widget.App.Button.OutlinedButton.IconOnly"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:icon="@drawable/ic_format_underlined_black_24dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/underline_button"-->
+<!--        style="@style/Widget.App.Button.OutlinedButton.IconOnly"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:icon="@drawable/ic_format_italic_black_24dp" />-->
+
+<!--    </com.google.android.material.button.MaterialButtonToggleGroup>-->
+
+    <Button
+        android:id="@+id/btnMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Date Picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnCalender1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Date Picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+
+    <Button
+        android:id="@+id/btnSnackBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Material Date Picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/snackbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnCustomSnackbar"
+        android:text="Custom SnackBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCpp"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/chip_bg_color"
+            android:clickable="true"
+            android:text="C++" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipJava"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/chip_bg_color"
+            android:clickable="true"
+            android:text="JAVA" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPython"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/chip_bg_color"
+            android:clickable="true"
+            android:text="Python" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="7"
+        android:rating="6.3"
+        android:min="1"
+        android:theme="@style/RatingBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

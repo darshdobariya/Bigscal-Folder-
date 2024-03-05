@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewOne"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/tvName"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Name"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+        <ImageButton
+            android:id="@+id/imgEdit"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginEnd="15dp"
+            android:background="#00000000"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgDelete"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgDelete"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:scaleType="fitXY"
+            android:src="@drawable/delete"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="#00000000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</LinearLayout>

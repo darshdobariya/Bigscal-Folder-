@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chat.ChatActivity">
+
+    <LinearLayout
+        android:id="@+id/lOne"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/icon_tint"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/back"
+            android:padding="13sp"
+            android:src="@drawable/arrow_back"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/housekeeper"
+            android:contentDescription="@string/img_profile"
+            android:padding="4sp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:paddingBottom="10sp"
+        android:paddingTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lOne">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcChat"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardVIew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            app:cardBackgroundColor="@color/icon_tint"
+            app:cardCornerRadius="25sp"
+            app:cardElevation="0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp">
+
+                <EditText
+                    android:id="@+id/edtChat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="top|start"
+                    android:hint="@string/enter_text_here"
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine"
+                    android:lines="200"
+                    android:maxLines="100"
+                    android:padding="7sp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnSend"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btnSend"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:backgroundTint="@color/icon_tint"
+                    android:contentDescription="@string/send"
+                    android:padding="3sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/send"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

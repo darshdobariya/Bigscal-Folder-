@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5sp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/green_dark"
+            app:cardCornerRadius="25sp"
+            app:cardElevation="0sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <SearchView
+                android:id="@+id/searchItem"
+                android:iconifiedByDefault="false"
+                android:queryHint="@string/search_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ReminderTheme"
+                android:searchIcon="@drawable/search"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/animation"
+            app:lottie_rawRes="@raw/error"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <ScrollView
+            android:padding="5sp"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        android:background="@color/green_dark">
+
+                        <TextView
+                            android:id="@+id/tvWord"
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:layout_gravity="start|center" />
+
+                        <ImageView
+                            android:id="@+id/imgSpeak"
+                            android:layout_width="40sp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/volume"
+                            android:textColor="@color/white"
+                            android:layout_margin="5sp"
+                            android:textSize="22sp"
+                            android:contentDescription="@string/volume"
+                            android:background="?android:attr/selectableItemBackgroundBorderless"
+                            app:tint="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10sp"
+                        android:background="@color/background">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25sp"
+                            android:text="@string/meaning"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:layout_gravity="start" />
+
+                        <TextView
+                            android:id="@+id/tvMeaning"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:layout_marginStart="10sp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            app:tint="@color/white"
+                            android:contentDescription="@string/volume" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/green_dark"/>
+
+                    <LinearLayout
+                        android:id="@+id/llSys"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:background="@color/background">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10sp"
+                            android:text="@string/synonyms"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:layout_gravity="start" />
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/cgSynonyms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_gravity="start">
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Widget.MaterialComponents.Chip.Filter"
+                                android:text="@string/chip"
+                                app:chipCornerRadius="20sp"
+                                android:visibility="gone"/>
+
+                        </com.google.android.material.chip.ChipGroup>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:background="@color/green_dark"/>
+
+                    <LinearLayout
+                        android:id="@+id/llAnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:background="@color/background">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/antonyms"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:paddingTop="10sp"
+                            android:layout_gravity="start" />
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/cgAntonyms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_gravity="start">
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Widget.MaterialComponents.Chip.Filter"
+                                android:text="@string/chip"
+                                app:chipCornerRadius="20sp"
+                                android:visibility="gone"/>
+
+                        </com.google.android.material.chip.ChipGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminateDrawable="@drawable/ic_progress"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_me"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

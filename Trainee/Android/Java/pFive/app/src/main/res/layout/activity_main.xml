@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5sp"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/click_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/camera_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/take_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/full_screen" />
+
+    <Button
+        android:id="@+id/full_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/full_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/camera_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SettingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10sp"
+        android:layout_height="70sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/theme_light_dark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ToggleButton
+            android:id="@+id/tbTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#C5C3C3"
+        tools:ignore="SmallSp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10sp"
+        android:layout_height="70sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/notification"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <Switch
+            android:id="@+id/tbNotification"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#C5C3C3"
+        tools:ignore="SmallSp" />
+
+</LinearLayout>

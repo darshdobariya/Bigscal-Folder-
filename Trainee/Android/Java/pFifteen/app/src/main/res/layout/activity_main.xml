@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10sp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rules"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/let_s_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SmallSp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSix"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSeven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvEight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvNine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+            <View
+                android:layout_width="5sp"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardCornerRadius="20sp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
+
+            <RadioButton
+                android:id="@+id/opOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20sp"
+                android:gravity="center"
+                android:paddingStart="10sp"
+                android:button="@drawable/checkbox_custom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/opTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:paddingStart="10sp"
+                android:button="@drawable/checkbox_custom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/opOne"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/opThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:paddingStart="10sp"
+                android:button="@drawable/checkbox_custom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/opTwo"
+                tools:ignore="RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/opFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15sp"
+                android:gravity="center"
+                android:paddingStart="10sp"
+                android:button="@drawable/checkbox_custom"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/opThree"
+                tools:ignore="RtlSymmetry" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consThank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100sp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvEmotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+        <Button
+            android:id="@+id/btnRetake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retake"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmotion" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

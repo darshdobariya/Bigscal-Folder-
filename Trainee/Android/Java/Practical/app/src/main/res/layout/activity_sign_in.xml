@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="30sp"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/login"
+            android:textColor="@color/color180"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            app:startIconDrawable="@drawable/mail"
+            app:boxCornerRadiusBottomEnd="25sp"
+            app:boxCornerRadiusBottomStart="25sp"
+            app:boxCornerRadiusTopEnd="25sp"
+            app:boxCornerRadiusTopStart="25sp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtMail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:paddingStart="50sp"
+                android:hint="@string/mail"
+                android:text="@string/admin_mail_com"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/color180"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tvOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            app:endIconMode="custom"
+            app:startIconDrawable="@drawable/lock"
+            app:boxCornerRadiusBottomEnd="25sp"
+            app:boxCornerRadiusBottomStart="25sp"
+            app:boxCornerRadiusTopEnd="25sp"
+            app:boxCornerRadiusTopStart="25sp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:paddingStart="50sp"
+                android:hint="@string/password"
+                android:text="@string/_123"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/color180"
+                tools:ignore="RtlSymmetry" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/text_normal"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/login"
+        android:textSize="20sp"
+        android:backgroundTint="@color/color180"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

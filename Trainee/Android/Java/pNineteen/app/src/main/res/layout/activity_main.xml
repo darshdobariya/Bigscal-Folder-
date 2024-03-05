@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:textSize="20sp"
+            android:text="@string/detail"
+            android:textStyle="bold">
+
+            <TextView
+                android:id="@+id/tvDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="@string/detail"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetail"/>
+
+            <LinearLayout
+                android:id="@+id/llDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:paddingTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drinks"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tvDrinks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alcoholic"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tvAlcoholic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/instruction"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tvInstruction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvLblIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="@string/ingredients"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/llDetail"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvLblIngredients"/>
+
+            <TextView
+                android:id="@+id/tvIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvLblIngredients"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

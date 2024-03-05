@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "94557162417",
+    "firebase_url": "https://test-messaging-app-be624-default-rtdb.firebaseio.com",
+    "project_id": "test-messaging-app-be624",
+    "storage_bucket": "test-messaging-app-be624.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94557162417:android:8102e17007b663ee5e4b90",
+        "android_client_info": {
+          "package_name": "com.example.test3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo6lQ_F_Y0RzspL9GP_hjHXMzZwzxYUkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

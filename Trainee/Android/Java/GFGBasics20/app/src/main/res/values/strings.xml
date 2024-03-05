@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">GFGBasics2.0</string>
+
+
+    <string name="buttonText">Display Next Course</string>
+    <string name="heading">MVP Architecture Pattern</string>
+    <string name="subHeading">GeeksforGeeks Computer Science Online Courses</string>
+    <string name="description">Course Description</string>
+    <string name="google">google</string>
+
+
+    <string name="blink">BLINK</string>
+    <string name="clockwise">ROTATE</string>
+    <string name="fade">FADE</string>
+    <string name="move">MOVE</string>
+    <string name="slide">SLIDE</string>
+    <string name="zoom">ZOOM</string>
+    <string name="stop_animation">STOP ANIMATION</string>
+    <string name="course_rating">Course Rating</string>
+    <string name="course_name">Course Name</string>
+    <string name="view_data">View data</string>
+    <string name="save_data_public">Save data public</string>
+    <string name="save_data_private">Save data private</string>
+    <string name="msg">msg</string>
+    <string name="enter_user_mail">enter user mail</string>
+    <string name="enter_user_name">enter user name</string>
+    <string name="hey_there">Hi, There</string>
+    <string name="welcome">Welcome</string>
+    <string name="additional">You\'ve been missed</string>
+    <string name="email_placeholder">Email or Username</string>
+    <string name="password_placeholder">Password</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="login_done">Great! Login Successfully</string>
+    <string name="car_image">car image</string>
+    <string name="car_one">Car One</string>
+    <string name="location">location</string>
+    <string name="surat_india">surat, india</string>
+    <string name="_2546000_tl">2546000 TL</string>
+    <string name="search">Search</string>
+    <string name="image_movie">imageMovie</string>
+    <string name="star">star</string>
+
+</resources>

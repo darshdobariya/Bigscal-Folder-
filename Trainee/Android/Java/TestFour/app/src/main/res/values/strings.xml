@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestFour</string>
+    <string name="search_word">Search word</string>
+    <string name="volume">volume</string>
+    <string name="meaning">Meaning  </string>
+    <string name="synonyms">Synonyms</string>
+    <string name="antonyms">Antonyms</string>
+    <string name="chip">chip</string>
+    <string name="click_me">click me</string>
+    <string name="imgerro">imgErro</string>
+</resources>

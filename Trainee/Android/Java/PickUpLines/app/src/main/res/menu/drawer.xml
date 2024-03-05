@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:id="@+id/remove_ads"
+        android:title="@string/remove_ads"
+        android:icon="@drawable/medal"/>
+
+    <item android:id="@+id/favorite"
+        android:title="@string/favorite"
+        android:icon="@drawable/like"/>
+
+    <item android:id="@+id/pickup_line_of_the_day"
+        android:title="@string/pickup_line_of_the_day"
+        android:icon="@drawable/quotes"/>
+
+    <item android:id="@+id/pickup_line_maker"
+        android:title="@string/pickup_line_maker"
+        android:icon="@drawable/paint_brush"/>
+
+    <item android:id="@+id/setting"
+        android:title="@string/setting"
+        android:icon="@drawable/setting"/>
+
+    <item android:id="@+id/customer_support"
+        android:title="@string/customer_support"
+        android:icon="@drawable/mail"/>
+
+    <item android:id="@+id/privacy_policy"
+        android:title="@string/privacy_policy"
+        android:icon="@drawable/insurance"/>
+
+    <item android:id="@+id/terms_and_condition"
+        android:title="@string/terms_and_condition"
+        android:icon="@drawable/terms_and_conditions"/>
+
+    <item android:id="@+id/rate_5_star"
+        android:title="@string/rate_5_star"
+        android:icon="@drawable/star"/>
+
+    <item android:id="@+id/share_app"
+        android:title="@string/share_app"
+        android:icon="@drawable/share"/>
+
+</menu>

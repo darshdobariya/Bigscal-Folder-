@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+
+    <!--  Tabs  -->
+    <string name="chat_fragment">Chat</string>
+    <string name="status_fragment">Status</string>
+    <string name="call_fragment">Call</string>
+
+    <!--  Bottom Navigation  -->
+    <string name="home_fragment">Home</string>
+    <string name="setting_fragment">Setting</string>
+    <string name="logout_fragment">Log out</string>
+
+    <!--  user details  -->
+    <string name="userProfile">User Profile Picture</string>
+    <string name="userName">User Name</string>
+    <string name="userChatCount">1</string>
+    <string name="userLastMsg">User Last Message</string>
+    <string name="userTime">User Last Time</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="user_profile">User Profile</string>
+    <string name="more">More</string>
+    <string name="back">Back</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="tabs">tabs</string>
+    <string name="viewpager">viewpager</string>
+    <string name="send_notification">send notification</string>
+</resources>

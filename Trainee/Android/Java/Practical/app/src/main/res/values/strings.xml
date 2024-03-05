@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">pOne</string>
+    <string name="todo">TODO</string>
+    <string name="skip">Skip</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="number">Number</string>
+    <string name="friend">Friend</string>
+    <string name="msg_body">Message Body</string>
+    <string name="msg_time">Message Time</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Setting</string>
+    <string name="password">Password</string>
+    <string name="timer">timer</string>
+    <string name="mail">Mail</string>
+    <string name="darsh">Darsh</string>
+    <string name="are_you_reading">Are you reading?</string>
+    <string name="_9_00_am">9:00 am</string>
+    <string name="_2">2</string>
+    <string name="raj">Raj</string>
+    <string name="hello">Hello</string>
+    <string name="_7_41_pm">7:41 pm</string>
+    <string name="_1">1</string>
+    <string name="arav">Arav</string>
+    <string name="sure">Sure</string>
+    <string name="_9_00_ama">9:00 am</string>
+    <string name="shruti">Shruti</string>
+    <string name="by">by ...</string>
+    <string name="_6_41_pm">6:41 pm</string>
+    <string name="_4">4</string>
+    <string name="btntext">btnText</string>
+    <string name="btn_text">Btn Text</string>
+    <string name="admin_mail_com">admin@mail.com</string>
+    <string name="_123">123</string>
+</resources>

@@ -1,0 +1,593 @@
+<resources>
+    <string name="app_name">PickUp Lines</string>
+    <string name="background">background</string>
+    <string name="brush">Brush</string>
+    <string name="quotes_start">Quotes start</string>
+    <string name="quotes_end">Quotes End</string>
+    <string name="like">Like</string>
+    <string name="heart">heart</string>
+    <string name="save">Save</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="emojiicon">emojiIcon</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="favorite">Favorite</string>
+    <string name="pickup_line_of_the_day">Pickup Line of the Day</string>
+    <string name="pickup_line_maker">Pickup Line Maker</string>
+    <string name="setting">Setting</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_and_condition">terms and Condition</string>
+    <string name="rate_5_star">Rate 5 Star</string>
+    <string name="share_app">Share App</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="favorites">Favorites</string>
+    <string name="version">version</string>
+    <string name="version_label">Version Label</string>
+    <string name="back">back</string>
+
+
+    <string-array name="bad">
+        <item>"Do you have a name? Or can I call you mine?"</item>
+        <item>"If you and I were socks, we'd make a great pair!"</item>
+        <item>"Are you a time traveler? Because I see you in my future!"</item>
+        <item>"I'm no mathematician, but I'm pretty good with numbers. Tell you what, give me yours and watch what I can do with it."</item>
+        <item>"If you were a vegetable, you would be a cute-cumber!"</item>
+        <item>"I'm glad I remembered to bring my library card. 'Cause I am totally checking you out!"</item>
+        <item>"You must be made of cheese. Because you're looking Gouda tonight!"</item>
+        <item>"Well, here I am. What are your other two wishes for the genie?"</item>
+        <item>"Remember me? Oh, that's right, I've only met you in my dreams."</item>
+        <item>"My buddies bet me that I wouldn't be able to start a conversation with the most beautiful person in the club. What should we do with their money?"</item>
+        <item>"You must be a campfire. Because you're super hot and I want s'more."</item>
+        <item>"Are you from Tennessee? Because you're the only Ten I See."</item>
+        <item>"There must be something wrong with my eyes. I can't take them off you."</item>
+        <item>"Have you been covered in bees recently? I just assumed, because you look sweeter than honey."</item>
+        <item>"If nothing lasts forever, will you be my nothing?"</item>
+        <item>"If you were a phaser on Star Trek, you'd be set to stun!"</item>
+    </string-array>
+
+
+    <!--
+    <string-array name="cheesy">
+        <item>You\'re so sweet, you\'d put Hershey's out of business!</item>
+        <item>Are you a 45-degree angle? Because you\'re a cutie!</item>
+        <item>I\'m in the mood for pizza. A pizza you, that is!</item>
+        <item>Are you a loan? \'Cause you\'ve got my interest!</item>
+        <item>Is there an airport nearby, or was that just my heart taking off?</item>
+        <item>Are you a camera? Because every time I look at you, I smile!</item>
+        <item>If you were a burger at McDonald\'s, you'd be named the McGorgeous!</item>
+        <item>Your eyes are bluer than the Atlantic ocean. And I don\'t mind being lost at sea!</item>
+        <item>Let me guess, your middle name is Gillette, right? Because you\'re the best a man can get!</item>
+        <item>If I had four quarters to give to the four prettiest women in the world, you would have a dollar!</item>
+        <item>I hope you know CPR, because you are taking my breath away!</item>
+        <item>I was wondering if you had an extra heart. Because mine was just stolen!</item>
+        <item>Did you invent the airplane? Because you seem Wright for me!</item>
+        <item>Are you a parking ticket? Cause you\'ve got fine written all over you!</item>
+        <item>I seem to have lost my phone number. Can I have yours?</item>
+        <item>I\'m learning about important dates in history. Wanna be one of them?</item>
+        <item>Do you believe in love at first sight? Or should I walk past you again?</item>
+        <item>If you were a Transformer you\'d be Optimus Fine!</item>
+        <item>Go ahead, feel my shirt. It\'s made of boyfriend material!</item>
+        <item>In my opinion, there are three kinds of beautiful: Cute, pretty, and sexy. Somehow, you manage to be all three.</item>
+        <item>I swear someone stole the stars from the sky and put them in your eyes.</item>
+        <item>I don’t know which is prettier today—the weather, or your eyes.</item>
+        <item>I think the only way you could possibly be more beautiful is if I got to know you.</item>
+        <item>If beauty were time, you’d be eternity.</item>
+        <item>If I had a nickel for every time I saw someone as beautiful as you, I’d still only have five cents.</item>
+        <item>One night I looked up at the stars and thought, ‘Wow, how beautiful.’ But now that I’m looking at you, nothing else can compare.</item>
+        <item>The sparkle in your eyes is so bright, the sun must be jealous.</item>
+        <item>You are astoundingly gorgeous, but I can tell that’s the least interesting thing about you. I’d love to know more.</item>
+        <item>I don’t know your name, but I’m sure it’s as beautiful as you are. I’m (your name).</item>
+        <item>If you were a fruit, you’d be a ‘fine-apple.’</item>
+        <item>I just had to tell you, your beauty made me truly appreciate being able to see.</item>
+        <item>I can’t tell if that was an earthquake, or if you just seriously rocked my world.</item>
+        <item>What does it feel like to be the most gorgeous girl in the room?</item>
+        <item>Hi, I’m (your name). Do you remember me? Oh, that’s right—we’ve only met in my dreams.</item>
+        <item>You know, your smile has been lighting up the room all night and I just had to come and say hello.</item>
+        <item>I thought this was a (bar/restaurant/etc.), but I must be in a museum because you’re a piece of art.</item>
+        <item>Do you know what my shirt is made of? Boyfriend material.</item>
+        <item>Are you a time traveler? Because I absolutely see you in my future.</item>
+        <item>Your hand looks heavy—can I hold it for you?</item>
+        <item>Can I follow you where you\'re going right now? Cause my parents always told me to follow my dreams!</item>
+        <item>Are you Siri? Because you autocomplete me!</item>
+    </string-array>
+
+    <string-array name="clever">
+        <item>Call me superglue? because holy shit do i get attached.</item>
+        <item>Honey, you give new meaning to the definition of ‘edible’.</item>
+        <item>Does your left eye hurt? Because you’ve been looking right all day.</item>
+        <item>Are you a 90 degree angle? Cause you are looking right!</item>
+        <item>So, I see you eat with utensils. Well, I’ve got one that I’m just dying to put in your drawers.</item>
+        <item>Damn, if sexy was a crime, you\'d be guilty as charged!</item>
+        <item>I know you\'re busy today, but can you add me to your to-do list?</item>
+        <item>What do I have to do to get on your drunk dial list?</item>
+        <item>I lost my teddy bear, will you sleep with me instead?</item>
+        <item>You look so familiar… didn’t we take a class together? I could’ve sworn we had chemistry.</item>
+        <item>If I were a stop light, I’d turn red everytime you passed by, just so I could stare at you a bit longer.</item>
+        <item>My attraction to you is an inversed square law.</item>
+        <item>Know what\'s on the menu? Me 'n' u.</item>
+        <item>Alphabet starts with ABCNumber starts with 123So can love start with you and me?</item>
+        <item>Do you smoke? Cause weed be cute together.</item>
+        <item>I suffer from amnesia. When did we get married.</item>
+        <item>With my IQ and your body, we could make a race of super children and conquer the earth!</item>
+        <item>Let\'s play a game, the winner dates the loser.</item>
+        <item>What do you want for Christmas? A date with you!</item>
+        <item>Do you want a million bucks? Yes? Just look in the mirror.</item>
+        <item>On scale of 1–10 billion what\'s your phone number?</item>
+        <item>You can’t be my first, but you can be my last.</item>
+        <item>How about you slip into something more comfortable! Like ME.</item>
+        <item>You know what you would really look beautiful in? My arms.</item>
+        <item>Mario is red, Sonic is blue, grab a controller and be my player 2.</item>
+        <item>You must be made of Copper and Tellurium—because you\'re CuTe</item>
+        <item>I was reading you like a book and I loved the story.</item>
+        <item>You know who\'s the most beautiful person in the world? Read the first word.</item>
+        <item>On a scale from 1 to 10, you\'re a 9… And I'm the 1 you need.</item>
+        <item>If this was Neverland, I’d only have to think of you to be able to fly. And everyone would be like, “Man, you fly a lot.”</item>
+        <item>I can read your palm. Your heart line says that you will call me soon.</item>
+        <item>Did you see my to-do list to roll a joint? Because you are certainly high on my to-do list.</item>
+        <item>You\'re like pizza. Even you\'re bad, you're good.</item>
+        <item>I think of you when I smile, and when I smile I think of you.</item>
+        <item>Hi, I would like to meet you. Do you have a friend who can introduce us?</item>
+        <item>I searched for "beautiful" on Google Maps and it lead me to you.</item>
+        <item>I like your biology , We both got chemistry, So now let\'s do some physics.</item>
+        <item>What\'s difference between you and alarm clock? I\'d enjoy waking up with you.</item>
+        <item>You know how your hair would really look good? In my lap.</item>
+        <item>Your body is made up of 70% water and I’m thirsty.</item>
+        <item>Him - That\'s cool, but I thought you might need a husband. Here\'s my number.</item>
+        <item>Her - I\'m sorry, I have a boyfriend</item>
+        <item>I advise you to surrender immediately, or I’ll have to use a pickup line.</item>
+        <item>If reality really is a figment of my imagination, then you\'re the best thing I've ever come up with.</item>
+        <item>You have to attend my wedding when I get married, cause the wedding can\'t go on without the bride.</item>
+        <item>Baby, every time i see you, my cardiovascular system gets all worked up.</item>
+        <item>My love for you is like dividing by zero, it cannot be defined.</item>
+        <item>I\'m so good at algebra that I could replace your x and you would not even know y.</item>
+        <item>Why was 6 afraid of 7? I don\'t know, but on the topic of numbers, will you give me yours?</item>
+        <item>One, two, three, four. I declare a tongue war.</item>
+    </string-array>
+
+    <string-array name="cute">
+        <item>Excuse me, do you have the time? I just want to remember the exact minute I got a crush on you.</item>
+        <item>Do you have a name, or can I just call you ‘mine?’</item>
+        <item>You know, I’m actually terrible at flirting. How about you try to pick me up instead?</item>
+        <item>You look like you know how to have a good time. Been on any adventures lately?</item>
+        <item>Hey, do you mind if we take a picture together? I just want to show my mom what my next girlfriend looks like.</item>
+        <item>If I were to ask you out on a date, would your answer be the same as the answer to this question?</item>
+        <item>Do I know you? (pause) Oh, sorry, it’s just that you look just like my next girlfriend.</item>
+        <item>Hi, my name is (your name), but you can call me tonight or tomorrow.</item>
+        <item>I wish I’d paid more attention to science in high school, because you and I’ve got chemistry and I want to know all about it.</item>
+        <item>It’s never easy meeting a complete stranger—especially one as beautiful as you—without being properly introduced. But can we try anyway?</item>
+        <item>Are you any good at boxing? Because you look like a knockout.</item>
+        <item>Excuse me, I don’t mean to intrude, but you owe me a drink (pause), because when I saw you, I dropped mine.</item>
+        <item>I’m surprised the restaurant/bar/etc. hasn’t asked you to leave yet. You’re so beautiful you’re making all the other girls look bad.</item>
+        <item>I was going to call you beautiful, but then I realized I don’t have your number yet.</item>
+        <item>You see my friend over there? S/he wants to know if you think I’m cute.</item>
+        <item>I started reading/watching an interesting book/show last week, and I’d love to discuss it with someone. Have you heard of it?</item>
+        <item>I was just trying to buy a drink here, but you’re very distracting.</item>
+        <item>I seem to have lost my number—can I have yours?</item>
+        <item>Trust me, I’m not drunk; I’m just intoxicated by you.</item>
+        <item>My friends bet me I couldn’t talk to the prettiest girl in the bar. Want to use their money to buy some drinks?</item>
+        <item>If you let me borrow a kiss, I promise I’ll give it right back.</item>
+        <item>There must be something wrong with my eyes—I can’t seem to take them off of you.</item>
+        <item>You must be a hell of a thief, because you managed to steal my heart from across the room.</item>
+        <item>I’d say, ‘God bless you,’ but it looks like he already did.</item>
+        <item>You know, I believe that honesty is the best policy, so to be perfectly honest, you’re the sexiest man I’ve ever seen.</item>
+        <item>I was going to say something really sweet about you, but when I saw you, I became speechless.</item>
+        <item>I’m not currently an organ donor, but I’d be happy to give you my heart.</item>
+        <item>I saw you walking by and I had to come say hello. I love your style. My name’s (your name).</item>
+        <item>When I text you goodnight later, what phone number should I use?</item>
+        <item>You know, I had a pickup line ready to go, but you’re so hot it just left my mind.</item>
+        <item>If I were a cat, I’d spend all nine of my lives with you.</item>
+        <item>Kiss me if I’m wrong but, dinosaurs still exist, right?</item>
+        <item>Excuse me, do you have the time? I just want to remember the exact minute I got a crush on you.</item>
+        <item>Wow, when God made you, he was seriously showing off.</item>
+        <item>Would you mind giving me a pinch? You’re so cute, I must be dreaming.</item>
+        <item>I’m not photographer, but I can definitely picture us together.</item>
+        <item>I’m really glad I just bought life insurance, because when I saw you, my heart stopped.</item>
+        <item>Do you believe in love at first sight, or should I try walking by again?</item>
+        <item>(Hold out your hand) Hey, I’m going for a walk. Would you mind holding this for me?</item>
+    </string-array>
+
+    <string-array name="dirty">
+        <item>In the words of the great Lizzo, I just took a DNA test, turns out I’m 100% your bae.</item>
+        <item>Did you hear that new Cardi B song? Want me to sing it to you?</item>
+        <item>Complete this sentence: “You, me, and __.”</item>
+        <item>I’d love to be the devil on your shoulder and the devil on your lips.</item>
+        <item>I hate to see you go but I love to watch you walk away.</item>
+        <item>Are you a raisin? Cause you’re raising my hopes for a kiss right about now.</item>
+        <item>Did you take your Vitamin D today? Want to?</item>
+        <item>Did you get those pants for off? They’re 100% off at my place.</item>
+        <item>Someone should call the police, because you just stole my heart!</item>
+        <item>Baby, you’re so hot, you make the equator look like the north pole.</item>
+        <item>If you look that good in clothes, you must look even better out of them.</item>
+        <item>Want to play conductor? You be the engineer and I’ll go choo choo.</item>
+        <item>Is that a mirror in your pants because I can see myself in them.</item>
+        <item>Baby, you’re so sweet, you put Hershey’s out of business.</item>
+        <item>I think you’re suffering from a lack of vitamin me.</item>
+        <item>Stop, drop, and roll, baby. You are on fire.</item>
+        <item>We could be the reason Santa has a naughty list this year.</item>
+        <item>That shirt looks great on you… as a matter of fact, so would I.</item>
+        <item>Do you want to save water and shower together?</item>
+        <item>So long as we’re in the theatre….why don’t we get some play?</item>
+        <item>There must be a light switch on my forehead because every time I see you, you turn me on!</item>
+        <item>Roses are red. Violets are blue. I’m coming home with you.</item>
+        <item>Can I borrow your lips?</item>
+        <item>Nice dress. Can I talk you out of it?</item>
+        <item>Your legs must be tired because you’ve been running through my mind all night.</item>
+        <item>Do you like bacon? Wanna strip?</item>
+        <item>Let us let only latex stand between our love.</item>
+        <item>Are you a trampoline? Because I want to bounce on you.</item>
+        <item>My name isn’t Elmo, but you can tickle me any time you want to.</item>
+        <item>Damn, if being sexy was a crime, you’d be guilty as charged!</item>
+        <item>You must be yogurt because I want to spoon you.</item>
+        <item>Is that a candy cane in your pocket or are you just happy to see me?</item>
+        <item>If I was the judge, I’d sentence you to my bed.</item>
+        <item>You dropped something. My jaw.</item>
+        <item>If your upper lip is Christmas and your lower lip is Thanksgiving, can I come visit any time in between?</item>
+        <item>You are so selfish. You’re going to have that body the rest of your life and I just want it for one night.</item>
+        <item>I’m just like a pore strip. Hard to get off, but extremely satisfied once you do.</item>
+        <item>Don’t ever change. Just get naked.</item>
+        <item>Are you Dracula? You looked a little thirsty when you were looking at me.</item>
+        <item>Are you a sea lion? Because I can sea you lion in my bed tonight.</item>
+        <item>Are you a supermarket sample? Because I want to taste you again and again without any sense of shame.</item>
+        <item>Do you have any room for an extra tongue in your mouth?</item>
+        <item>Want to go halves on a baby?</item>
+        <item>I’m an adventurer and I want to explore you.</item>
+        <item>Want to save water by showering together?</item>
+        <item>This might seem corny but you’re making me horny.</item>
+        <item>I’m having trouble sleeping by myself, can you sleep with me?</item>
+        <item>Does your name start with “C” because I can C us getting down.</item>
+        <item>I was feeling very off today, but then you turned me on.</item>
+        <item>Dinner first, or can we go straight for dessert?</item>
+        <item>Let’s play Titanic. You’ll be the iceberg and I’ll go down.</item>
+        <item>If you were a flower you’d be a damn-delion.</item>
+        <item>Treat me like a pirate and give me that booty.</item>
+        <item>Can you do telekinesis? Because you’ve made a part of me move without even touching it.</item>
+        <item>Are you a drill sergeant? Because you have my privates standing at attention.</item>
+        <item>Are you my homework? Cause I’m not doing you but I definitely should be.</item>
+        <item>My doctor told me I have a Vitamin D deficiency. Want to go back to my place and save me?</item>
+        <item>You know what winks and then screws like a tiger? {Wink}</item>
+        <item>I don’t think I want babies, but I wouldn’t mind refining my baby making technique with you.</item>
+        <item>I’m not feeling myself today. Can I feel you instead?</item>
+        <item>I’m peanut butter, you’re jelly, let’s have sex.</item>
+        <item>We were both born without clothes.</item>
+        <item>What is a nice person like you doing in a dirty mind like mine?</item>
+        <item>If you’re feeling down, I can feel you up.</item>
+        <item>Are you a campfire? Because you’re hot and I want s’more.</item>
+        <item>Can I borrow a kiss? I promise I’ll give it back.</item>
+        <item>I think I could fall madly in bed with you.</item>
+        <item>That’s a nice shirt. Can I try it on after we have sex?</item>
+        <item>What did you say your name was? I want to make sure I’m screaming the right name tonight.</item>
+        <item>Do you have a shovel? Because I’m digging you.</item>
+        <item>Do you drink soda? Because you look so-da-licious.</item>
+        <item>Roses are red. Violets are fine. You be the 6. I’ll be the 9.</item>
+        <item>Did you have lucky charms for breakfast? Because you look magically delicious!</item>
+        <item>With school, I just want an A. With you, I just want to F.</item>
+        <item>You look great right now. Do you know what else would look great on you? Me!</item>
+        <item>Are you an elevator? Because I’ll go up and down on you.</item>
+        <item>Please don’t let this get to your head, but do you want some?</item>
+        <item>I know a great way to burn off the calories in that drink.</item>
+        <item>Do I have to sign for your package?</item>
+        <item>Did you know my lips are like Skittles and you’re about to taste the rainbow?</item>
+        <item>I lost my keys… Can I check your pants?</item>
+        <item>Is it hot in here? Or is it just you?</item>
+        <item>Your outfit would look great on my bedroom floor.</item>
+        <item>Are you undressing me with your eyes?!</item>
+        <item>Your body is made up of water. . .and I’m thirsty.</item>
+        <item>Are you a haunted house? I’m going to scream when I’m in you.</item>
+        <item>I love my bed but I’d rather be in yours.</item>
+        <item>Is your name Earl Grey? Because you look like a hot-tea!</item>
+        <item>Give me your car keys so I can drive you crazy.</item>
+        <item>Can you tell me what time you’ll unzip your pants, please?</item>
+        <item>Are you an exam? Because I have been studying you like crazy.</item>
+        <item>I’m not into watching sunsets, but I’d love to see you go down.</item>
+        <item>Do you want to commit a sin for your next confessional?</item>
+        <item>Is your name winter? Because you’ll be coming soon.</item>
+        <item>Hey! My name is Microsoft. Can I crash at your place tonight?</item>
+        <item>I’m on top of things. Would you like to be one of them?</item>
+        <item>They say that kissing is a language of love, so would you mind starting a conversation with me?</item>
+        <item>You’re so hot, my zipper is falling for you.</item>
+    </string-array>
+
+    <string-array name="food">
+        <item>You\'re like my favorite candy bar, half sweet, half nuts.</item>
+        <item>Did you just come from KFC, cause your thighs and breasts just gave me a drumstick.</item>
+        <item>I\'ll be the Burger King, and you\'ll be the Dairy Queen… You treat me right, and I'll do it your way.</item>
+        <item>You must be peanut butter because you\'re making my legs feel like jelly.</item>
+        <item>I\'m like Domino\'s Pizza. If I don\'t come in 30 minutes, the next one is free.</item>
+        <item>How about I dip my Wild Wings in your Buffalo sauce?</item>
+        <item>Do you live in a corn field? Cause I\'m stalking you!</item>
+        <item>Do you like Pizza Hut? Cause I want to stuff your crust.</item>
+        <item>Are you a fruit? Cause honeydew you know how fine you look right now?</item>
+        <item>Life would be feta if we were together.</item>
+        <item>Can you put some hot sauce on my enchilada? I need some spice in my life.</item>
+        <item>Your name must be Coca Cola, because you\'re so-da-licious.</item>
+        <item>Anyone can sit here and buy you drinks. I want to buy you dinner!</item>
+        <item>I know milk does a body good, but damn girl, how much have you been drinking?</item>
+        <item>If you were a vegetable, you’d be a CUTE-cumber.</item>
+        <item>You’re looking so sweet, you’ve got my eyes glazed over like doughnuts.</item>
+        <item>I might not be a Doritos Locos Taco, but I sure will spice up your life.</item>
+        <item>Your cupcakes make my soufflés rise.</item>
+        <item>Do you work at Little Caesars? Because you’re Hot And I\'m Ready.</item>
+        <item>Do you sell hot dogs? Because you sure know how to make a wiener stand.</item>
+        <item>Baby, if you were a fruit you\'d be a Fineapple.</item>
+        <item>Were you born in a farm? You look a-maize-ing.</item>
+        <item>You remind me of cheese… I want you on everything!</item>
+    </string-array>
+
+    <string-array name="funny">
+        <item>I’m lost. Can you give me directions to your heart?</item>
+        <item>Is your name Google? Because you have everything I’ve been searching for.</item>
+        <item>Hello, I’m a thief, and I’m here to steal your heart.</item>
+        <item>I seem to have lost my phone number. Can I have yours?</item>
+        <item>Do you have a map? I keep getting lost in your eyes.</item>
+        <item>You must be tired because you\'ve been running through my mind all night.</item>
+        <item>If I could rearrange the alphabet I would put U and I together.</item>
+        <item>Did it hurt? When you fell out of heaven?</item>
+        <item>On a scale from 1 to you\'re a 9… And I'm the 1 you need.</item>
+        <item>Are you Israeli? Cause you Israeli hot.</item>
+        <item>If I were a transplant surgeon, I’d give you my heart.</item>
+        <item>Nice to meet you, I’m (your name) and you are… gorgeous!</item>
+        <item>Are you a 90 degree angle? Cause you are looking right!</item>
+        <item>How much does a polar bear weigh? Enough to break the ice!</item>
+        <item>We’re not socks, but I think we’d make a great pair.</item>
+        <item>Somebody better call God, because he’s missing an angel.</item>
+        <item>My love for you is like diarrhea, I just can\'t hold it in.</item>
+        <item>I\'m no photographer, but I can picture us together.</item>
+        <item>Do you believe in love at first sight—or should I walk by again?</item>
+        <item>I must be in a museum, because you truly are a work of art.</item>
+        <item>I wish I were cross-eyed so I can see you twice.</item>
+        <item>Are you a parking ticket? Because you’ve got FINE written all over you.</item>
+        <item>If you were a Transformer… you’d be Optimus Fine.</item>
+        <item>Are you from Tennessee? Because you\'re the only 10 I see!</item>
+        <item>I must be a snowflake, because I\'ve fallen for you.</item>
+        <item>Aside from being sexy, what do you do for a living?</item>
+        <item>If I could rearrange the alphabet, I’d put ‘U’ and ‘I’ together.</item>
+        <item>There is something wrong with my cell phone. It doesn\'t have your number in it.</item>
+        <item>Do you like raisins? How do you feel about a date?</item>
+        <item>Hey, my name\'s Microsoft. Can I crash at your place tonight?</item>
+        <item>Well, here I am. What are your other two wishes?</item>
+        <item>You must be exhausted. You\'ve been running through my mind all day.</item>
+        <item>If I could rearrange the alphabet, I\'d put 'I' and 'U' together.</item>
+        <item>You are the reason even Santa has a naughty list.</item>
+        <item>I\'m writing a term paper on the finer things in life, and I was wondering if I could interview you.</item>
+        <item>If you were words on a page you\'d be the fine print.</item>
+        <item>Is your name Ariel? Cause we Mermaid for each other.</item>
+        <item>I want our love to be like the number Pi: irrational and never-ending.</item>
+        <item>I think you\'re suffering from a lack of vitamin me.</item>
+        <item>Was your dad a boxer? Because you\'re a knockout!</item>
+        <item>You must be a magician. Because any time I look at you, everyone else disappears.</item>
+        <item>I may not be a photographer. But I can totally picture us together.</item>
+        <item>You must be a high test score. Because I want to take you home and show you to my mother.</item>
+        <item>Want a raisin? No? Well, how about a date?</item>
+        <item>You owe me a drink. Because when I looked at you, I dropped mine!</item>
+        <item>Kiss me if I\'m wrong. But dinosaurs still exist, right?</item>
+        <item>Hey, my name’s Microsoft. Can I crash at your place?</item>
+        <item>Aside from being drop-dead gorgeous, what do you do for a living?</item>
+        <item>You’re so sweet, you’re giving me a toothache.</item>
+        <item>Was that an earthquake or did you just rock my world?</item>
+        <item>Hey, my name’s Microsoft. Can I crash at your place tonight?</item>
+        <item>If I had a dollar for every time I thought of you, I’d be in a higher tax bracket.</item>
+        <item>Good thing I just bought term life insurance … because I saw you and my heart stopped!</item>
+        <item>What does it feel like to be the most beautiful girl in the room?</item>
+        <item>I\'ll cook you dinner, if you cook me breakfast.</item>
+        <item>I\'m new in town, could you give me directions to your apartment?</item>
+        <item>Can I take a picture of you so Santa knows what I want for Christmas?</item>
+        <item>When a penguin finds a mate they stay with them for the rest of their life. Will you be my penguin?</item>
+        <item>Do you believe in love at first sight or should I walk past again?</item>
+        <item>Did your licence get suspended for driving all these guys crazy?</item>
+        <item>My doctor says I\'m lacking vitamin U.</item>
+        <item>You\'re like a dictionary… you add meaning to my life.</item>
+        <item>Your name must be Coca Cola, because you\'re so-da-licious.</item>
+        <item>You must be a magician, because every time I look at you, everyone else disappears.</item>
+        <item>Feel my t-shirt, it’s made of boyfriend material.</item>
+        <item>Are you going to kiss me or do I have to lie to my diary?</item>
+        <item>Is it hot in here or is it just you?</item>
+        <item>I want someone to look at me the way I look at chocolate cake.</item>
+        <item>My mom thinks I\'m gay, can you help me prove her wrong?</item>
+        <item>You know what you would really look beautiful in? My arms.</item>
+        <item>If you were a vegetable you\'d be a cutecumber.</item>
+        <item>I thought Happiness starts with H. But why does mine starts with U.</item>
+        <item>Did you hear of the new disease called beautiful, I think you\'re infected.</item>
+        <item>If I had a garden I’d put your tulips and my tulips together.</item>
+        <item>I\'ve seem to have lost my number, can I have yours?</item>
+        <item>There is something wrong with my phone. Could you call it for me to see if it rings?</item>
+        <item>Are you a keyboard? Because you are my type.</item>
+        <item>If you were words on a page, you’d be fine print.</item>
+        <item>If I followed you home, would you keep me?</item>
+        <item>I’m not drunk, I’m just intoxicated by you.</item>
+        <item>Are you Australian? Because you meet all of my koala-fications.</item>
+        <item>I may not be a genie, but I can make all your wishes come true!</item>
+        <item>Can you pinch me, because you\'re so fine I must be dreaming.</item>
+        <item>You must be a ninja, because you snuck into my heart.</item>
+        <item>Is your dad a terrorist? Because you are the bomb.</item>
+        <item>Kiss me if I\'m wrong, but dinosaurs still exist, right?</item>
+        <item>Would you grab my arm so I can tell my friends I\'ve been touched by an angel?</item>
+        <item>Wouldn\'t we look cute on a wedding cake together.</item>
+        <item>Are you craving Pizza? Because I’d love to get a pizz-a you.</item>
+        <item>Do you have a name, or can I call you mine?</item>
+        <item>Are you from China? Because I\'m China get your number.</item>
+        <item>Did you swallow magnets? Cause you\'re attractive.</item>
+        <item>I\'ll give you a kiss. If you don\'t like it, you can return it.</item>
+        <item>If you were a fruit you\'d be a fineapple.</item>
+        <item>Are you from Japan cause I\'m trying to get in Japanties.</item>
+        <item>Are you a camera? Because every time I look at you, I smile.</item>
+        <item>If I were a cat I\'d spend all 9 lives with you.</item>
+        <item>Can I follow you home? Cause my parents always told me to follow my dreams.</item>
+        <item>Do you have a tan, or do you always look this hot?</item>
+        <item>If looks could kill, you\'d be a weapon of mass destruction.</item>
+        <item>Is your name Wi-fi? Because I\'m really feeling a connection.</item>
+        <item>If beauty were time, you’d be eternity.</item>
+        <item>Wow, when god made you he was showing off.</item>
+        <item>My feet are getting cold… because you’ve knocked my socks off.</item>
+        <item>Does your left eye hurt? Because you’ve been looking right all day.</item>
+        <item>If you were a triangle you\'d be acute one.</item>
+        <item>I know this is going to sound cheesy, but I think you\'re the gratest.</item>
+        <item>Do you like sales? Because if you\'re looking for a good one, clothing is 1off at my place.</item>
+        <item>Are you my appendix? Because I don\'t understand how you work but this feeling in my stomach makes me want to take you out.</item>
+        <item>Do you like science because I\'ve got my ion you.</item>
+        <item>Do you generate electricity with water through the process of hydro power? Because dammmm.</item>
+        <item>Have you been to the doctor\'s lately? Cause I think you're lacking some vitamin me.</item>
+        <item>Do you like vegetables because I love you from my head tomatoes.</item>
+        <item>Are you a banana because I find you a peeling.</item>
+        <item>Are you from Starbucks because I like you a latte.</item>
+        <item>I’ve been wondering, do your lips taste as good as they look.</item>
+        <item>Your hand looks heavy. Here, let me hold it for you.</item>
+        <item>Is your name Google? Because you\'ve got everything I'm searching for.</item>
+        <item>Remember me? Oh, that’s right, I’ve met you only in my dreams.</item>
+        <item>If you were a chicken, you\'d be impeccable.</item>
+        <item>Pinch me, you’re so fine I must be dreaming.</item>
+        <item>Do your legs hurt from running through my dreams all night?</item>
+        <item>I\'m no photographer, but I can picture us together.</item>
+        <item>If a fat man puts you in a bag at night, don\'t worry I told Santa I wanted you for Christmas.</item>
+        <item>Thank god I\'m wearing gloves because you are too hot to handle.</item>
+        <item>Are you a parking ticket? ‘Cause you’ve got fine written all over you.</item>
+        <item>Your lips look so lonely…Would they like to meet mine?</item>
+        <item>We\'re not socks. But I think we\'d make a great pair.</item>
+        <item>I wish I were cross-eyed so I can see you twice.</item>
+        <item>Roses are red, violets are blue, how would you like it if I came home with you?</item>
+        <item>Even if there wasn\'t gravity on earth, I\'d still fall for you.</item>
+        <item>Is your body from McDonald\'s? Cause I'm lovin' it!</item>
+        <item>Do you want to see a picture of a beautiful person? (hold up a mirror)</item>
+        <item>Life without you is like a broken pencil… pointless.</item>
+        <item>Are you a beaver? Cause daaaaaaaaam!</item>
+        <item>Are you from Tennessee? Because you\'re the only 10 I see!</item>
+        <item>Well, here I am. What were your other two wishes?</item>
+        <item>My lips are like skittles. Wanna taste the rainbow?</item>
+        <item>You spend so much time in my mind, I should charge you rent.</item>
+        <item>I must be in a museum, because you truly are a work of art.</item>
+        <item>I\'m new in town. Could you give me directions to your apartment?</item>
+        <item>If nothing lasts forever, will you be my nothing?</item>
+        <item>If I were to ask you out on a date, would your answer be the same as the answer to this question?</item>
+        <item>Are you a cat because I\'m feline a connection between us?</item>
+        <item>If you were a library book, I would check you out.</item>
+        <item>There is something wrong with my cell phone. It doesn\'t have your number in it.</item>
+        <item>Are you lost ma\'am? Because heaven is a long way from here.</item>
+        <item>My love for you is like diarrhoea, I just can\'t hold it in.</item>
+        <item>Are you cake? Cause I want a piece of that.</item>
+        <item>Hello, I\'m a thief, and I\'m here to steal your heart.</item>
+        <item>If you were a steak you would be well done.</item>
+        <item>I know you\'re busy today, but can you add me to your to-do list?</item>
+        <item>I must be a snowflake, because I\'ve fallen for you.</item>
+        <item>Somebody call the cops, because it’s got to be illegal to look that good!</item>
+        <item>What has 36 teeth and holds back the Incredible Hulk? My zipper.</item>
+        <item>You must be Jamaican, because Jamaican me crazy.</item>
+        <item>Hey, tie your shoes! I don’t want you falling for anyone else.</item>
+        <item>Are you religious? Cause you’re the answer to all my prayers.</item>
+        <item>Is that a mirror in your pocket? Cause I can see myself in your pants!</item>
+        <item>Are you French because Eiffel for you.</item>
+        <item>Hello. Cupid called. He wants to tell you that he needs my heart back.</item>
+        <item>Is it hot in here or is it just you?</item>
+        <item>My buddies bet me that I wouldn’t be able to start a conversation with the hottest person in the bar. Wanna buy some drinks with their money?</item>
+        <item>You must be a broom, ‘cause you just swept me off my feet.</item>
+        <item>Sorry, but you owe me a drink. [Why?] Because when I looked at you, I dropped mine.</item>
+        <item>Didn’t I see you on the cover of Vogue?</item>
+        <item>I’m no mathematician, but I’m pretty good with numbers. Tell you what, give me yours and watch what I can do with it.</item>
+        <item>You remind me of a magnet, because you sure are attracting me over here!</item>
+        <item>Are you a dictionary? Cause you’re adding meaning to my life.</item>
+        <item>You don’t need keys to drive me crazy.</item>
+        <item>Can you take me to the doctor? Because I just broke my leg falling for you.</item>
+        <item>Are you my phone charger? Because without you, I’d die.</item>
+        <item>I\'d say God Bless you, but it looks like he already did.</item>
+        <item>Do you have a pencil? Cause I want to erase your past and write our future.</item>
+        <item>Was your father a thief? ‘Cause someone stole the stars from the sky and put them in your eyes.</item>
+        <item>Was you father an alien? Because there’s nothing else like you on Earth!</item>
+        <item>I’m sorry, were you talking to me? [No] Well then, please start.</item>
+        <item>There must be something wrong with my eyes, I can’t take them off you.</item>
+    </string-array>-->
+
+
+    <!--<string-array name="hookup">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+    <string-array name="nerd">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+
+    <string-array name="romantic">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>-->
+
+</resources>

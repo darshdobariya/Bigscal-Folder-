@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pEleven</string>
+    <string name="send">Send Message</string>
+    <string name="Reply">Reply</string>
+</resources>

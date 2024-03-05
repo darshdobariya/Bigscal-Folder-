@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".Sender">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:hint="@string/send"
+        app:boxCornerRadiusBottomEnd="25sp"
+        app:boxCornerRadiusBottomStart="25sp"
+        app:boxCornerRadiusTopEnd="25sp"
+        app:boxCornerRadiusTopStart="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/color180"
+            tools:ignore="RtlSymmetry" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

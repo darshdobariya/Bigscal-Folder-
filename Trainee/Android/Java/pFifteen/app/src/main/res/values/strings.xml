@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">pFifteen</string>
+
+    <string name="pre">Previous</string>
+    <string name="next">Next</string>
+    <string name="thank_you_n_for_feedback">Thank You \n For Feedback</string>
+    <string name="todo">todo</string>
+    <string name="ok">Ok</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="rules">"Develop MathQuest quiz application \n The app will have one quiz Activity \n The home composable should be an entry point of the app \n This should provide an introduction to the quiz and a button to start the quiz. \n"</string>
+    <string name="retake">Retake</string>
+    <string name="exellent">Exellent</string>
+    <string name="good">Good</string>
+    <string name="bad">Bad</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AllTypeRecycleView</string>
+    <string name="nested">Nested</string>
+    <string name="group">Group</string>
+    <string name="item_header">Item Header</string>
+    <string name="item_name">Item Name</string>
+</resources>
