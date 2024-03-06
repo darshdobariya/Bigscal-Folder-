@@ -1,5 +1,7 @@
 package com.example.pnineteen;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -32,19 +34,26 @@ public class MainViewModel extends ViewModel {
     }
 
     public void fetchDrinkDetails(String drink) {
-        getDetails.listRepos(drink).enqueue(new Callback<List<DrinkDemo>>() {
+        Call<List<DrinkDemo>> call = getDetails.listRepos(drink);
+        Log.e("Request URL", call.request().url().toString()); // Print the request URL
+
+        call.enqueue(new Callback<List<DrinkDemo>>() {
             @Override
             public void onResponse(@NonNull Call<List<DrinkDemo>> call, @NonNull Response<List<DrinkDemo>> response) {
                 if (response.isSuccessful()) {
                     drinkDetails.setValue(response.body());
+                    assert response.body() != null;
+                    Log.e("Response got : ", response.body().toString());
                 } else {
                     // Handle unsuccessful response
+                    Log.e("Response fail :", "response sent to fail");
                 }
             }
 
             @Override
             public void onFailure(@NonNull Call<List<DrinkDemo>> call, @NonNull Throwable t) {
                 // Handle failure
+                Log.e("Response failed like this : ", "Failed to retrieve response" + t);
             }
         });
     }

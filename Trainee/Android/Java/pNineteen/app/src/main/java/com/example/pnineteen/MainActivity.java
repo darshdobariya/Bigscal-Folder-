@@ -6,7 +6,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import java.util.List;
@@ -31,31 +30,34 @@ public class MainActivity extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
-        viewModel.getDrinkDetails().observe(this, new Observer<List<DrinkDemo>>() {
-            @Override
-            public void onChanged(List<DrinkDemo> drinkDemos) {
-                if (drinkDemos != null && !drinkDemos.isEmpty()) {
-                    DrinkDemo drinkDemo = drinkDemos.get(0);
-                    List<Drinks> drinksList = drinkDemo.getDrinks();
-                    if (drinksList != null && !drinksList.isEmpty()) {
-                        Drinks drinks = drinksList.get(0);
-                        tvDrinks.setText(drinks.getStrDrink());
-                        tvCategory.setText(drinks.getStrCategory());
-                        tvAlcoholic.setText(drinks.getStrAlcoholic());
-                        tvInstruction.setText(drinks.getStrInstructions());
-                        // Set ingredients (concatenate non-empty ingredient fields)
-                        StringBuilder ingredients = new StringBuilder();
-                        for (int i = 1; i <= 15; i++) {
-                            String ingredient = (String) drinks.getClass().getDeclaredFields()[i + 16].get(drinks);
+        viewModel.fetchDrinkDetails("vodka");
+
+        viewModel.getDrinkDetails().observe(this, drinkDemos -> {
+            if (drinkDemos != null && !drinkDemos.isEmpty()) {
+                DrinkDemo drinkDemo = drinkDemos.get(0);
+                List<Drinks> drinksList = drinkDemo.getDrinks();
+                if (drinksList != null && !drinksList.isEmpty()) {
+                    Drinks drinks = drinksList.get(0);
+                    tvDrinks.setText(drinks.getStrDrink());
+                    tvCategory.setText(drinks.getStrCategory());
+                    tvAlcoholic.setText(drinks.getStrAlcoholic());
+                    tvInstruction.setText(drinks.getStrInstructions());
+                    // Set ingredients (concatenate non-empty ingredient fields)
+                    StringBuilder ingredients = new StringBuilder();
+                    for (int i = 1; i <= 15; i++) {
+                        try {
+                            String ingredient = (String) drinks.getClass().getDeclaredField("strIngredient" + i).get(drinks);
                             if (ingredient != null && !ingredient.isEmpty()) {
                                 ingredients.append(ingredient).append(", ");
                             }
+                        } catch (IllegalAccessException | NoSuchFieldException e) {
+                            e.printStackTrace();
                         }
-                        tvIngredients.setText(ingredients.toString());
                     }
-                } else {
-                    Toast.makeText(MainActivity.this, "No drink found", Toast.LENGTH_SHORT).show();
+                    tvIngredients.setText(ingredients.toString());
                 }
+            } else {
+                Toast.makeText(MainActivity.this, "No drink found", Toast.LENGTH_SHORT).show();
             }
         });
 

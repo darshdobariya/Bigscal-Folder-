@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface GetDetails {
-    @GET("/random.php")
-    Call<List<DrinkDemo>> listRepos(@Query("drink") String drink);
+    @GET("search.php?")
+    Call<List<DrinkDemo>> listRepos(@Query("s") String drink);
 }
